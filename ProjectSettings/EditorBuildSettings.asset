@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: ff073e78828db5e4ba01ace74607abe7
+  - enabled: 1
+    path: Assets/Scenes/RegisterScene.unity
+    guid: 8b2e0550b503d644380c38d90c0b77b9
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 71648802b6225d04db8b9795122cfe85
+  - enabled: 1
+    path: Assets/Scenes/ProfileScene.unity
+    guid: 04c22e1d7682a5b4eba10cfefbd0f98e
+  - enabled: 1
+    path: Assets/Scenes/FriendListScene.unity
+    guid: 310cc6c302cef544dbc8a209fb1d5d3d
+  - enabled: 1
+    path: Assets/Scenes/StreakScene.unity
+    guid: 69fef31c581ae394d8fc0fb0ff3d395f
+  - enabled: 1
+    path: Assets/Scenes/RoomCreateScene.unity
+    guid: 76ed18e58235af74894853a80c311b3c
+  - enabled: 1
+    path: Assets/Scenes/RoomJoinScene.unity
+    guid: 871cb94fe866a7044bb5013154abebbd
+  - enabled: 1
+    path: Assets/Scenes/SessionScene.unity
+    guid: 958bc3452ecdb70449eb8c8752b9ce96
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: f542cdde82f3bae4289182dc9ad1fbe6
+  - enabled: 1
+    path: Assets/Scenes/ResultsScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
