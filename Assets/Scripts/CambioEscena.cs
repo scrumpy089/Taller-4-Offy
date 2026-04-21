@@ -40,11 +40,19 @@ public class CambioEscena : MonoBehaviour
         SceneManager.LoadScene(7); 
     }
 
-    public void IrAInicioDeSesion()
+    public void IrAIniciarJuego()
     {
         SceneManager.LoadScene(8);
     }
 
+    public void IrAQuiz()
+    {
+        SceneManager.LoadScene(9);
+    }
 
+    public void IrAResultados()
+    {
+        SceneManager.LoadScene(10);
+    }
 
 }

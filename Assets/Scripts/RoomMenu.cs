@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class RoomMenu : MonoBehaviour
 {
-    public GameObject CanvaPreMenu;
-    public GameObject CanvaMenu;
+    public GameObject CanvaActive;
+    public GameObject CanvaInactive;
 
-    public void CreateRoom()
+    public void ActiveToInactive()
     {
-        CanvaPreMenu.SetActive(false);
-        CanvaMenu.SetActive(true);
+        CanvaActive.SetActive(false);
+        CanvaInactive.SetActive(true);
     }
 
-    public void BackToPreMenu()
+    public void InactiveToActive()
     {
-        CanvaPreMenu.SetActive(true);
-        CanvaMenu.SetActive(false);
+        CanvaInactive.SetActive(false);
+        CanvaActive.SetActive(true);
     }
 }
