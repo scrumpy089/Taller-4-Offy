@@ -17,4 +17,3 @@ public class RoomMenu : MonoBehaviour
         CanvaMenu.SetActive(false);
     }
 }
-

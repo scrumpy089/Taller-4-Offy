@@ -40,7 +40,7 @@ public class CambioEscena : MonoBehaviour
         SceneManager.LoadScene(7); 
     }
 
-    public void IrAInicioSesion()
+    public void IrAInicioDeSesion()
     {
         SceneManager.LoadScene(8);
     }
