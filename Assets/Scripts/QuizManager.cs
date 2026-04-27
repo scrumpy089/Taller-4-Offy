@@ -19,29 +19,69 @@ public class QuizManager : MonoBehaviour
 
     public CanvaManagement canvasManager;
 
+    // Timer
+    public float questionTime = 15f;
+    private float timeLeft;
+    private bool canAnswer = true;
+
+    public TMP_Text timerText;
+
     void Start()
     {
+        GameData.Reset();
+        GameData.totalQuestions = QnA.Count;
+
         generateQuestion();
+    }
+
+    void Update()
+    {
+        // Timer
+        if (!canAnswer) return;
+
+        timeLeft -= Time.deltaTime;
+
+        if (timerText != null)
+            timerText.text = Mathf.Ceil(timeLeft).ToString();
+
+        if (timeLeft <= 0)
+        {
+            canAnswer = false;
+            Answer(false);
+        }
     }
 
     public void Answer(bool isCorrect)
     {
+        // Evitar múltiples respuestas
+        if (!canAnswer) return;
+        canAnswer = false;
+
         canvasManager.OpenCanvaPopup();
 
-        // Texto
-        feedbackText.text = isCorrect ? "Correcto" : "Incorrecto";
-        feedbackText.color = isCorrect ? Color.green : Color.red;
-
-        // Imagen del personaje
+        // Actualizar datos y mostrar feedback
         if (isCorrect)
         {
-            characterImage.sprite = correctSprite;
+            // Incrementar respuestas correctas y calcular puntos
+            GameData.correctAnswers++;
+
+            int points = CalculatePoints();
+            GameData.score += points;
+
+            feedbackText.text = "Correcto +" + points + " pts";
         }
         else
         {
-            characterImage.sprite = wrongSprite;
+            // Incrementar respuestas incorrectas
+            GameData.wrongAnswers++;
+            feedbackText.text = "Incorrecto";
         }
 
+        // Cambiar color del texto y sprite del personaje
+        feedbackText.color = isCorrect ? Color.green : Color.red;
+        characterImage.sprite = isCorrect ? correctSprite : wrongSprite;
+
+        // Eliminar pregunta actual para no repetirla
         QnA.RemoveAt(currentQuestion);
     }
 
@@ -77,7 +117,23 @@ public class QuizManager : MonoBehaviour
     void generateQuestion()
     {
         currentQuestion = Random.Range(0, QnA.Count);
+
+        // Reiniciar timer
+        timeLeft = questionTime;
+        canAnswer = true;
+
         QuestionTxt.text = QnA[currentQuestion].Questions;
         setAnswers();
+    }
+
+    // Calcula puntos basados en el tiempo restante
+    int CalculatePoints()
+    {
+        float percentage = (timeLeft + 2f) / questionTime;
+
+        int minPoints = 50;
+        int maxPoints = 100;
+
+        return Mathf.RoundToInt(Mathf.Lerp(minPoints, maxPoints, percentage));
     }
 }

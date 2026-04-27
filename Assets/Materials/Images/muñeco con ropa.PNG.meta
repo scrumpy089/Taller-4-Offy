@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 5172d88dcd44c6c4d9033c3072a865b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1038128989686414494
+    second: "mu\xF1eco con ropa_0"
+  - first:
+      213: -4779976793190402037
+    second: "mu\xF1eco con ropa_1"
+  - first:
+      213: -5702512194245274015
+    second: "mu\xF1eco con ropa_2"
+  - first:
+      213: 4434950962526587080
+    second: "mu\xF1eco con ropa_3"
+  - first:
+      213: 290611205627969938
+    second: "mu\xF1eco con ropa_4"
+  - first:
+      213: -3559308975994543676
+    second: "mu\xF1eco con ropa_5"
+  - first:
+      213: 3831942953073361836
+    second: "mu\xF1eco con ropa_6"
+  - first:
+      213: -7726749881287734448
+    second: "mu\xF1eco con ropa_7"
+  - first:
+      213: -1873152680983382411
+    second: "mu\xF1eco con ropa_8"
+  - first:
+      213: 2293374178635550112
+    second: "mu\xF1eco con ropa_9"
+  - first:
+      213: -8472121943588951133
+    second: "mu\xF1eco con ropa_10"
+  - first:
+      213: -282430857848468749
+    second: "mu\xF1eco con ropa_11"
+  - first:
+      213: -7877944794341250726
+    second: "mu\xF1eco con ropa_12"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_0"
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1741
+        width: 498
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c3b4dd0dc286e00800000000000000
+      internalID: 1038128989686414494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_1"
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1356
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0876479e6c1aadb0800000000000000
+      internalID: -4779976793190402037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_2"
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1355
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1665dae5f5b9cd0b0800000000000000
+      internalID: -5702512194245274015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_3"
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1350
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c88cad276c1c8d30800000000000000
+      internalID: 4434950962526587080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_4"
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1346
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291043f0a55780400800000000000000
+      internalID: 290611205627969938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_5"
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1092
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c16cf7285bca9ec0800000000000000
+      internalID: -3559308975994543676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_6"
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1088
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3cf7530dbcd2530800000000000000
+      internalID: 3831942953073361836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_7"
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1082
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b8d89cbe115c490800000000000000
+      internalID: -7726749881287734448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_8"
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1076
+        width: 169
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5763aef9f893106e0800000000000000
+      internalID: -1873152680983382411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_9"
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 843
+        width: 168
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad00a62aa3b3df10800000000000000
+      internalID: 2293374178635550112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_10"
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 839
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aba692caf9fc6a80800000000000000
+      internalID: -8472121943588951133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_11"
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 833
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa455491aa941cf0800000000000000
+      internalID: -282430857848468749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "mu\xF1eco con ropa_12"
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 827
+        width: 168
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59e62dd2faeba290800000000000000
+      internalID: -7877944794341250726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "mu\xF1eco con ropa_0": 1038128989686414494
+      "mu\xF1eco con ropa_1": -4779976793190402037
+      "mu\xF1eco con ropa_10": -8472121943588951133
+      "mu\xF1eco con ropa_11": -282430857848468749
+      "mu\xF1eco con ropa_12": -7877944794341250726
+      "mu\xF1eco con ropa_2": -5702512194245274015
+      "mu\xF1eco con ropa_3": 4434950962526587080
+      "mu\xF1eco con ropa_4": 290611205627969938
+      "mu\xF1eco con ropa_5": -3559308975994543676
+      "mu\xF1eco con ropa_6": 3831942953073361836
+      "mu\xF1eco con ropa_7": -7726749881287734448
+      "mu\xF1eco con ropa_8": -1873152680983382411
+      "mu\xF1eco con ropa_9": 2293374178635550112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
