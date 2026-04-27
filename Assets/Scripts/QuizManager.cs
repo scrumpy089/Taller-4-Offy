@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class QuizManager : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class QuizManager : MonoBehaviour
 
     public TMP_Text timerText;
 
+    private bool timeOutTriggered = false;
+
     void Start()
     {
         GameData.Reset();
@@ -40,14 +43,25 @@ public class QuizManager : MonoBehaviour
         if (!canAnswer) return;
 
         timeLeft -= Time.deltaTime;
-
+        
         if (timerText != null)
             timerText.text = Mathf.Ceil(timeLeft).ToString();
 
-        if (timeLeft <= 0)
+        // Cambiar color del timer a rojo si quedan 5 segundos o menos
+        if (timeLeft <= 5)
         {
-            canAnswer = false;
-            Answer(false);
+            timerText.color = Color.red;
+        }
+        else
+        {
+            timerText.color = Color.white;
+        }
+
+        // Evitar múltiples triggers de timeout
+        if (timeLeft <= 0 && !timeOutTriggered)
+        {
+            timeOutTriggered = true;
+            StartCoroutine(TimeOutRoutine());
         }
     }
 
@@ -116,6 +130,7 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
+        timeOutTriggered = false;
         currentQuestion = Random.Range(0, QnA.Count);
 
         // Reiniciar timer
@@ -129,11 +144,20 @@ public class QuizManager : MonoBehaviour
     // Calcula puntos basados en el tiempo restante
     int CalculatePoints()
     {
-        float percentage = (timeLeft + 2f) / questionTime;
+        float percentage = timeLeft / questionTime;
 
         int minPoints = 50;
         int maxPoints = 100;
 
         return Mathf.RoundToInt(Mathf.Lerp(minPoints, maxPoints, percentage));
+    }
+
+    IEnumerator TimeOutRoutine()
+    {
+        Answer(false);
+
+        yield return new WaitForSeconds(1.5f);
+
+        NextQuestion();
     }
 }
