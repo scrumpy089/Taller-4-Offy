@@ -32,7 +32,8 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         GameData.Reset();
-        GameData.totalQuestions = QnA.Count;
+        GameData.totalQuestions = Mathf.Min(GameData.maxQuestions, QnA.Count);
+        Debug.Log("MaxQuestions al iniciar: " + GameData.maxQuestions);
 
         generateQuestion();
     }
@@ -103,10 +104,11 @@ public class QuizManager : MonoBehaviour
     {
         canvasManager.CloseCanvaPopup();
 
-        // Si ya no hay preguntas → cambiar escena
-        if (QnA.Count == 0)
+        // Si ya no hay preguntas → cambiar escena (asesinado este loco)
+        // Ahora si las preguntas correctas e incorrectas equivalen a las totales se cambia la escena
+        if (GameData.correctAnswers + GameData.wrongAnswers >= GameData.totalQuestions)
         {
-            SceneManager.LoadScene("ResultsScene"); // 👈 cambia esto
+            SceneManager.LoadScene("ResultsScene");
             return;
         }
 

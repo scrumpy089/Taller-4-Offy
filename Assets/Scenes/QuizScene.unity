@@ -1646,6 +1646,13 @@ MonoBehaviour:
     - Vicente
     - Vector
     CorrectAnswer: 4
+  - Questions: "\xBFCu\xE1l era el nombre del villano?"
+    Answers:
+    - Matriz
+    - Integral
+    - Vicente
+    - Vector
+    CorrectAnswer: 4
   options:
   - {fileID: 1320054837}
   - {fileID: 377650488}
