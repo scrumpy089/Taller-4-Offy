@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1081866681255",
+    "project_id": "offy-856bd",
+    "storage_bucket": "offy-856bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081866681255:android:8356a28b75220322db5482",
+        "android_client_info": {
+          "package_name": "com.offy.taller4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsodhCKvEz9o3gTMybBRG6d-9XCEWHHg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
