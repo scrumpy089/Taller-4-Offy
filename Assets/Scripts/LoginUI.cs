@@ -44,7 +44,7 @@ public class LoginUI : MonoBehaviour
                     return;
                 }
 
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene("MenuScene");
             });
     }
 

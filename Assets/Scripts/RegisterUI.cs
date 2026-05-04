@@ -12,11 +12,33 @@ public class RegisterUI : MonoBehaviour
     public TMP_InputField confirmPasswordInput;
 
     public TMP_Text messageText;
-    public GameObject panel;
+    public GameObject PanelAviso;
+    public GameObject loadingButton;
+    public GameObject registerButton;
+
+    public GameObject PanelRegister;
+    public GameObject PanelWelcome;
+    public GameObject PanelProfileSetup;
+
 
     void Start()
     {
-        panel.SetActive(false);
+        PanelRegister.SetActive(true);
+        PanelAviso.SetActive(false);
+        PanelWelcome.SetActive(false);
+        PanelProfileSetup.SetActive(false);
+
+        registerButton.SetActive(false);
+        loadingButton.SetActive(true);
+    }
+
+    void Update()
+    {
+        if (FirebaseManager.Instance != null && FirebaseManager.Instance.IsReady)
+        {
+            registerButton.SetActive(true);
+            loadingButton.SetActive(false);
+        }
     }
 
     public void Register()
@@ -85,7 +107,8 @@ public class RegisterUI : MonoBehaviour
             {
                 if (task.IsCompleted)
                 {
-                    SceneManager.LoadScene("LoginScene");
+                    PanelRegister.SetActive(false);
+                    PanelWelcome.SetActive(true);
                 }
                 else
                 {
@@ -96,14 +119,25 @@ public class RegisterUI : MonoBehaviour
 
     public void ShowMessage(string message, Color color)
     {
-        panel.SetActive(true);
+        PanelAviso.SetActive(true);
         messageText.text = message;
         messageText.color = color;
     }
 
     public void ClearMessage()
     {
-        panel.SetActive(false);
+        PanelAviso.SetActive(false);
         messageText.text = "";
+    }
+
+    public void GoToProfileSetup()
+    {
+        PanelWelcome.SetActive(false);
+        PanelProfileSetup.SetActive(true);
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
     }
 }

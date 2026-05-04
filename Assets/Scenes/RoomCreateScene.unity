@@ -313,9 +313,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1276491744}
+      - m_Target: {fileID: 1321957398}
         m_TargetAssemblyTypeName: RoomMenu, Assembly-CSharp
-        m_MethodName: ActiveToInactive
+        m_MethodName: ContinueMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -859,9 +859,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124623434}
+      - m_Target: {fileID: 1321957398}
         m_TargetAssemblyTypeName: RoomMenu, Assembly-CSharp
-        m_MethodName: ActiveToInactive
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1655,7 +1655,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1321957398}
         m_TargetAssemblyTypeName: RoomMenu, Assembly-CSharp
-        m_MethodName: InactiveToActive
+        m_MethodName: BackToPreMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2568,7 +2568,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1321957398}
         m_TargetAssemblyTypeName: RoomMenu, Assembly-CSharp
-        m_MethodName: ActiveToInactive
+        m_MethodName: CreateRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4442,52 +4442,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249876157}
   m_CullTransparentMesh: 1
---- !u!1 &1276491743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1276491745}
-  - component: {fileID: 1276491744}
-  m_Layer: 0
-  m_Name: CanvaManager 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1276491744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276491743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1f16b7c662200e4db7945fee835caa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RoomMenu
-  CanvaActive: {fileID: 1425300216}
-  CanvaInactive: {fileID: 711223263}
---- !u!4 &1276491745
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276491743}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 282.13803, y: 194.38176, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321957397
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,8 +4471,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1f16b7c662200e4db7945fee835caa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomMenu
-  CanvaActive: {fileID: 1596199233}
-  CanvaInactive: {fileID: 1425300216}
+  PreMenu: {fileID: 1596199233}
+  Menu: {fileID: 1425300216}
+  Comfirmacion: {fileID: 711223263}
 --- !u!4 &1321957399
 Transform:
   m_ObjectHideFlags: 0
@@ -4797,7 +4752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1425300217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5468,7 +5423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1596199234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6927,63 +6882,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070451316}
   m_CullTransparentMesh: 1
---- !u!1 &2124623433
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2124623435}
-  - component: {fileID: 2124623434}
-  m_Layer: 0
-  m_Name: CanvaManager 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2124623434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124623433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1f16b7c662200e4db7945fee835caa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RoomMenu
-  CanvaActive: {fileID: 711223263}
-  CanvaInactive: {fileID: 1425300216}
---- !u!4 &2124623435
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124623433}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 282.13803, y: 194.38176, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 378944433}
   - {fileID: 1596199237}
-  - {fileID: 1321957399}
   - {fileID: 1425300220}
-  - {fileID: 1276491745}
   - {fileID: 711223267}
-  - {fileID: 2124623435}
   - {fileID: 1969926226}
   - {fileID: 582028498}
   - {fileID: 1007345981}
+  - {fileID: 1321957399}

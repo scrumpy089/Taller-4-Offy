@@ -12,47 +12,47 @@ public class CambioEscena : MonoBehaviour
 
     public void IrAMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("MenuScene");
     }
 
     public void IrAPerfil()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("ProfileScene");
     }
 
     public void IrAListaAmigos()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("FriendListScene");
     }
 
     public void IrARacha()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("StreakScene");
     }
 
     public void IrASalas()
     {
-        SceneManager.LoadScene(6); // Carga la escena de salas
+        SceneManager.LoadScene("RoomCreateScene"); // Carga la escena de salas
     }
 
     public void IrAUnirseSala()
     {
-        SceneManager.LoadScene(7); 
+        SceneManager.LoadScene("RoomJoinScene"); 
     }
 
     public void IrAIniciarJuego()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene("SessionScene");
     }
 
     public void IrAQuiz()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene("QuizScene");
     }
 
     public void IrAResultados()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene("ResultsScene");
     }
 
 }
