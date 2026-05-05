@@ -1,6 +1,7 @@
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
+using Firebase.Storage;
 using Firebase.Firestore;
 using Firebase.Extensions;
 
@@ -10,6 +11,7 @@ public class FirebaseManager : MonoBehaviour
 
     public FirebaseAuth Auth;
     public FirebaseFirestore DB;
+    public FirebaseStorage Storage;
 
     public bool IsReady { get; private set; }
 
@@ -30,9 +32,12 @@ public class FirebaseManager : MonoBehaviour
             {
                 Auth = FirebaseAuth.DefaultInstance;
                 DB = FirebaseFirestore.DefaultInstance;
+
+                Storage = FirebaseStorage.DefaultInstance;
+
                 IsReady = true;
                 Debug.Log("Firebase listo");
-            }
+            }       
             else
             {
                 Debug.LogError("Firebase error: " + task.Result);
